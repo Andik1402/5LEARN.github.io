@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../css/style_ques.css" />
+  <link rel="icon" href="../img/logo (2.1).png" />
+  <title>Practice Reading</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container justify-content-end pt-3">
+      <a class="navbar-brand" href="../reading/inter_page_read.html">
+        <i class="bi bi-x-lg text-white fw-bold fs-1"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- start Quiz button -->
+  <div class="start_btn"><button>Start Practice</button></div>
+
+  <!-- Info Box -->
+  <div class="info_box">
+    <div class="info-title"><span>Some Rules of this Practice</span></div>
+    <div class="info-list">
+      <div class="info">
+        1.The time given is unlimited.
+      </div>
+      <div class="info">
+        2. Once you select your answer, it can't be undone.
+      </div>
+      <div class="info">
+        3. you can see about the story.
+      </div>
+      <div class="info">
+        4. You'll get points on the basis of your correct answers.
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Practice</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+  <!-- Quiz Box -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">5LEARN PRACTICE</div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Story
+      </button>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- Here I've inserted question from JavaScript -->
+      </div>
+      <div class="option_list">
+        <!-- Here I've inserted options from JavaScript -->
+      </div>
+    </section>
+
+    <!-- footer of Quiz Box -->
+    <footer>
+      <div class="total_que">
+        <!-- Here I've inserted Question Count Number from JavaScript -->
+      </div>
+      <button class="next_btn">Next Que</button>
+    </footer>
+  </div>
+
+  <!-- Result Box -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">You've completed the Practice!</div>
+    <div class="score_text">
+      <!-- Here I've inserted Score Result from JavaScript -->
+    </div>
+    <div class="buttons">
+      <button class="restart">Replay Practice</button>
+      <button class="quit">Quit Practice</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            story
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>
+            Five restaurant reviews
+            </h5>
+            <p>
+            Barry G: We stopped at the White Horse Inn for lunch during a long
+            journey. My wife ordered the lasagne and I ordered a steak and ale
+            pie. We waited over thirty minutes for our food, and when my pie
+            arrived, it was chicken and mushroom. When they brought the correct
+            pie, I picked up the gravy and found that it was completely cold. When
+            I went to the bar and asked for it to be heated and suggested that we
+            should get a partial refund, the barman swore under his breath. When I
+            finally started eating, my wife had already finished her meal. Avoid
+            this restaurant at all costs!
+            </p>
+            <p>
+            Emma1987: We decided to come here for our Sunday lunch. The prices
+            were a bit steep, but we thought it would be worth it, if the food was
+            good. Sadly, we were disappointed. Our sausages were burnt and so dry
+            that we couldn’t even cut them. My partner’s steak was even worse. It
+            certainly wasn’t worth the money. It wasn’t even a pleasant place to
+            spend a Sunday. The carpet was old-fashioned and worn, the chairs were
+            uncomfortable and the walls needed painting. Very disappointing.
+            </p>
+            <p>
+            PGRigby: We were passing by and felt hungry, so we decided to stop
+            here for a meal. We got a warm welcome and were impressed with the
+            wide selection of beers and the extensive menu. The dishes are mostly
+            traditional, and not very adventurous or exotic, but it was decent,
+            reasonably priced, warm and well presented. We were served quickly,
+            considering there were seven of us, and the staff were polite.
+            Overall, it was good value for money and I would definitely go there
+            again.
+            </p>
+            <p>
+            SunnyDay: The pub looked very attractive from the outside, with a
+            large car park, disabled access and an attractive garden. It’s in a
+            good location on the main road, and I imagine it attracts a lot of
+            passing trade. However, if I was local to the area, I wouldn’t come
+            here regularly. Although the prices were typical, we didn’t get very
+            much for our money. My garlic mushrooms were just that, three small
+            mushrooms with a little dry salad – the kind you get from a bag – on
+            the side. Then, my partner and I both ordered fish and chips, and my
+            fish was much smaller than hers. When we complained, we weren’t
+            offered a refund or a new piece of fish. I’m sure there are better
+            places to eat in the area.
+            </p>
+            <p>
+            Andrew_Rose: We ended up at the White Horse Inn for our Sunday lunch
+            when the pub we planned to eat at had forgotten to note down our
+            booking. However, we felt very pleased about this error in the end. We
+            were greeted by a friendly, helpful young lady behind the bar who
+            allowed us to sample a few of the beers before we made our choices. I
+            ordered fish and chips. The fish was fresh and served in a lovely,
+            crisp batter. My friends were very happy with their roast dinners. The
+            desserts were also delicious. However, for me, it was the excellent
+            service and friendliness of all the staff that made the visit stand
+            out. We will look forward to returning in the future.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    let questions = [
+      {
+        numb: 1,
+        question: "The pub was not attractive on the inside.",
+        answer: "Emma1987",
+        options: [
+          "Barry G",
+          "Emma1987",
+          "PGRigby"
+        ],
+      },
+      {
+        numb: 2,
+        question: "A member of staff was rude.",
+        answer: "Barry G",
+        options: [
+          "PGRigby",
+          "Emma1987",
+          "Barry G"
+        ],
+      },
+      {
+        numb: 3,
+        question: "The food sizes were poor.",
+        answer: "SunnyDay",
+        options: [
+          "SunnyDay",
+          "Barry G",
+          "PGRigby"
+        ],
+      },
+      {
+        numb: 4,
+        question: "The food was well-priced.",
+        answer: "PGRigby",
+        options: [
+          "Andrew_Rose",
+          "Emma1987",
+          "PGRigby"
+        ],
+      },
+      {
+        // 2 Jawaban || CHECK BOX ||
+        numb: 5,
+        question: "The food was poor value for money. (Choose TWO correct answers)",
+        answer: "Emma1987 & SunnyDay",
+        options: [
+          "Barry G",
+          "Emma1987",
+          "SunnyDay"
+        ],
+      },
+      {
+        // 2 Jawaban || CHECK BOX ||
+        numb: 6,
+        question: "he menu was varied. (Choose TWO correct answers)",
+        answer: "PGRigby & Andrew_Rose",
+        options: [
+          "PGRigby",
+          "Emma1987",
+          "Andrew_Rose"
+        ],
+      },
+
+      {
+        numb: 7,
+        question: "The menu was conventional.",
+        answer: "PGRigby",
+        options: [
+          "Barry G",
+          "Emma1987",
+          "PGRigby"
+        ],
+      },
+      {
+        numb: 8,
+        question: "The food was well-prepared.",
+        answer: "Andrew_Rose",
+        options: [
+          "Barry G",
+          "Andrew_Rose",
+          "PGRigby"
+        ],
+      },
+      {
+        numb: 9,
+        question: "The food was poorly presented.",
+        answer: "SunnyDay",
+        options: [
+          "PGRigby",
+          "Barry G",
+          "SunnyDay"
+        ],
+      },
+      {
+        numb: 10,
+        question: "He/She asked for part of their money back.",
+        answer: "Barry G",
+        options: [
+          "Andrew_Rose",
+          "Barry G",
+          "PGRigby"
+        ],
+      },
+    ];
+  </script>
+
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/script_question_pracreading.js"></script>
+</body>
+
+</html>

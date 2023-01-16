@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style_ques.css" />
+    <link rel="icon" href="../img/logo (2.1).png" />
+    <title>Quiz Reading</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container justify-content-end pt-3">
+        <a class="navbar-brand" href="../reading/begin_page_read.html#Ecourse">
+          <i class="bi bi-x-lg text-white fw-bold fs-1"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+      <div class="info-title"><span>Some Rules of this Quiz</span></div>
+      <div class="info-list">
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per each question.
+        </div>
+        <div class="info">
+          2. Once you select your answer, it can't be undone.
+        </div>
+        <div class="info">
+          3. You can't select any option once time goes off.
+        </div>
+        <div class="info">
+          4. You can't see the matter of the back story.
+        </div>
+        <div class="info">
+          5. You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+    <div class="quiz_story">
+      <div class="titlequizstory"><span>STORY</span></div>
+      <div class="contentquizstory">
+        <h5>How my life has changed</h5>
+        <p>
+          I used to work on cruise ships as a musician. I travelled a lot! I
+          spent the month before the first lockdown in four continents! I used
+          to get up really early, drive to the airport and fly to a port across
+          the world and get on a ship just to get to work! Then I used to spend
+          between three and fourteen days on the ship. The ships were great. The
+          food was excellent, and the staff were brilliant. The ship stopped at
+          fantastic places, and I often used to spend the afternoon at the beach
+          drinking cocktails or sightseeing. But there were disadvantages too. I
+          often didn’t know anyone on the ship. But the passengers all knew me,
+          and they used to talk to me every time I left my cabin. I didn’t have
+          any privacy. Of course, I had to chat to them politely even when I
+          wasn’t in the mood.
+        </p>
+        <p>
+          But now, everything has changed. The cruises aren’t running now, and I
+          don’t know when they will run again, and I’ve been in my flat for a
+          year. I never used to spend much time here, and I haven’t spent a
+          whole year in England for over twenty years! But I’ve enjoyed it. I
+          bought a bike last year, and I’ve found some great beach cafes that I
+          never used to know about. I also bought a campervan, and I drove
+          around the coast. I always used to prefer beaches in the Caribbean and
+          the Mediterranean to British beaches. The weather is much better for a
+          start! But I found some beautiful places last year. I could park on
+          the beach in some places and run straight into the sea! They were much
+          less touristy and more peaceful than the places where the cruise ships
+          go.
+        </p>
+        <p>
+          // I’m spending a lot more time alone now. I didn’t use to be alone
+          much when I was working. But since the pandemic started, I have
+          developed new relationships with people who I didn’t use to know very
+          well. I always used to prefer the company of entertainers and people
+          who like to travel. I used to think that people with normal jobs were
+          boring. But since last year, I’ve got to know some really interesting,
+          strong, kind and caring people! So that’s been really valuable.
+        </p>
+      </div>
+      <div class="buttons">
+        <button class="constory">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">5LEARN QUIZ</div>
+        <div class="timer">
+          <div class="time_left_txt">Time Left</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text">
+          <!-- Here I've inserted question from JavaScript -->
+        </div>
+        <div class="option_list">
+          <!-- Here I've inserted options from JavaScript -->
+        </div>
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+        <div class="total_que">
+          <!-- Here I've inserted Question Count Number from JavaScript -->
+        </div>
+        <button class="next_btn">Next Que</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!</div>
+      <div class="score_text">
+        <!-- Here I've inserted Score Result from JavaScript -->
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+
+    <script>
+      let questions = [{
+        numb: 1,
+        question: "Sarah didn't use to have to _____",
+        answer: "manage staff on the ship.",
+        options: [
+            "get up early.",
+            "manage staff on the ship.",
+            "travel long distances to work."
+        ],
+    },
+
+    {
+        numb: 2,
+        question: "Sarah used to ____ around the world.",
+        answer: "relax on beaches",
+        options: [
+            "perform in concert halls",
+            "take her bike",
+            "relax on beaches"
+        ],
+    },
+
+    {
+        numb: 3,
+        question: "Sarah didn’t use to like _____",
+        answer: "talking politely to strangers.",
+        options: [
+            "talking politely to strangers.",
+            "her colleagues on the ship.",
+            "talking politely to strangers."
+        ],
+    },
+
+    {
+        numb: 4,
+        question: "Sarah is spending ____ at home than before.",
+        answer: "more time",
+        options: [
+            "about the same amount of time",
+            "less time",
+            "more time"
+        ],
+    },
+
+    {
+        numb: 5,
+        question: "Sarah went on bike rides and found some nice _____",
+        answer: "cafes",
+        options: [
+            "beaches",
+            "cafes",
+            "parks"
+        ],
+    },
+
+    {
+        numb: 6,
+        question: "Sarah disliked British beaches because ___ beaches in other countries.",
+        answer: "the weather is worse than on",
+        options: [
+            "the weather is worse than on",
+            "there are more people than on",
+            "they are not as beautiful as"
+        ],
+    },
+
+    {
+        numb: 7,
+        question: "Sarah spent ____ time alone in the past compared to now.",
+        answer: "less",
+        options: [
+            "more",
+            "a similar amount of",
+            "less"
+        ],
+    },
+
+    {
+        numb: 8,
+        question: "Talking about relationships, Sarah ___ now than in the past.",
+        answer: "appreciates normal people more",
+        options: [
+            "is kinder and more caring",
+            "has deeper relationships",
+            "appreciates normal people more"
+        ],
+    }
+
+];
+    </script>
+
+    <script src="../js/script_question_quizreading.js"></script>
+  </body>
+</html>

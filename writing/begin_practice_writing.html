@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style_ques.css" />
+    <link rel="icon" href="../img/logo (2.1).png" />
+    <title>Practice Writing</title>
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container justify-content-end pt-3">
+        <a class="navbar-brand" href="begin_page_writing.html">
+          <i class="bi bi-x-lg text-white fw-bold fs-1"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Practice</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+      <div class="info-title"><span>Some Rules of this Practice</span></div>
+      <div class="info-list">
+        <div class="info">
+          1. enter the answer in lowercase.
+        </div>
+        <div class="info">
+          2. you can see the questions on the questions button.
+        </div>
+        <div class="info">
+          3. Fill in all the questions until all are filled in.
+        </div>
+        <div class="info">
+          4. You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Practice</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">5LEARN PRACTICE</div>
+
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Question
+        </button>
+      </header>
+      <section>
+        <form id="quiz" name="quiz">
+          <p class="questions">
+            1.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question1"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            2.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question2"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            3.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question3"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            4.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question4"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            5.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question5"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            6.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question6"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            7.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question7"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            8.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question8"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            9.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question9"
+              autocomplete="off"
+            />
+          </p>
+          <p class="questions">
+            10.&nbsp;&nbsp;&nbsp;&nbsp;<input
+              id="textbox"
+              type="text"
+              name="question10"
+              autocomplete="off"
+            />
+          </p>
+        </form>
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+        <div class="total_que">
+          <!-- Here I've inserted Question Count Number from JavaScript -->
+        </div>
+        <button class="next_btn">Finish</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Practice!</div>
+      <div class="score_text">
+        <!-- Here I've inserted Score Result from JavaScript -->
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Practice</button>
+        <button class="quit">Quit Practice</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Question
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Dear Marta,<br />
+              I'm (0) going to tell you about my family. I live with my brother,
+              my mum, and my dad. We live (1)_______________Lincoln, a nice city
+              in the East Midlands region of England. My (2)____________name is
+              Albert. He's 51 years old, and he's (3)____________History
+              teacher. He's medium height, and he (4)____________short grey hair
+              and green eyes. He loves (5)____________books and watching
+              documentaries about prehistoric times. He doesn't like sports. My
+              mum's name is Melissa. She's 49 years old. She's a little shorter
+              (6)____________my dad, and she's got long brown hair and blue
+              eyes. She is a shop owner. She sells beauty products in a shop
+              near our home. She (7)____________swimming. She goes swimming
+              (8)____________a week. I've got a twin brother.
+              (9)____________name's Luke. He's 21 years old, and he's got brown
+              hair, like me. But he is much (10)____________than me. He is very
+              big and strong, and he loves playing rugby and going to the gym.
+              Another very important member of our family is Cooper, our dog. He
+              is ten years old, and we love him! What about your family? Love
+              Sam
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/script_question_begin_pracwriting.js"></script>
+  </body>
+</html>

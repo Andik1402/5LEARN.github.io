@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../css/style_ques.css" />
+  <link rel="icon" href="../img/logo (2.1).png" />
+  <title>Quiz Reading</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container justify-content-end pt-3">
+      <a class="navbar-brand" href="../reading/inter_page_read.html">
+        <i class="bi bi-x-lg text-white fw-bold fs-1"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- start Quiz button -->
+  <div class="start_btn"><button>Start Quiz</button></div>
+
+  <!-- Info Box -->
+  <div class="info_box">
+    <div class="info-title"><span>Some Rules of this Quiz</span></div>
+    <div class="info-list">
+      <div class="info">
+        1. You will have only <span>15 seconds</span> per each question.
+      </div>
+      <div class="info">
+        2. Once you select your answer, it can't be undone.
+      </div>
+      <div class="info">
+        3. You can't select any option once time goes off.
+      </div>
+      <div class="info">
+        4. You can't see the matter of the back story.
+      </div>
+      <div class="info">
+        5. You'll get points on the basis of your correct answers.
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+  <div class="quiz_story">
+    <div class="titlequizstory"><span>STORY</span></div>
+    <div class="contentquizstory">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Story
+      </button>
+    </div>
+    <div class="buttons">
+      <button class="constory">Continue</button>
+    </div>
+  </div>
+
+  <!-- Quiz Box -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">5LEARN QUIZ</div>
+      <div class="timer">
+        <div class="time_left_txt">Time Left</div>
+        <div class="timer_sec">15</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- Here I've inserted question from JavaScript -->
+      </div>
+      <div class="option_list">
+        <!-- Here I've inserted options from JavaScript -->
+      </div>
+    </section>
+
+    <!-- footer of Quiz Box -->
+    <footer>
+      <div class="total_que">
+        <!-- Here I've inserted Question Count Number from JavaScript -->
+      </div>
+      <button class="next_btn">Next Que</button>
+    </footer>
+  </div>
+
+  <!-- Result Box -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">You've completed the Quiz!</div>
+    <div class="score_text">
+      <!-- Here I've inserted Score Result from JavaScript -->
+    </div>
+    <div class="buttons">
+      <button class="restart">Replay Quiz</button>
+      <button class="quit">Quit Quiz</button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            story
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>
+            Personality and health
+
+          </h5>
+          <p>
+
+            There is increasing evidence that health is linked to personality. However, until now, the relationship has
+            not affected the way health care is delivered. There are several reasons for this. Some health workers doubt
+            whether there is a direct link between health and personality or whether it’s just a coincidence. Some feel
+            it is their professional duty to treat all patients in the same way. Others argue that delivering health
+            services according to patients’ personalities will have minimal impact and therefore isn’t worth the effort.
+            However, some psychologists believe that applying different procedures to people with different
+            personalities could have a significant, positive effect on health.
+          </p>
+          <p>
+
+            Research into personality has, in recent years, focused on the Big Five model of personality types. This
+            model measures how neurotic, extrovert, open to experience, agreeable and conscientious a person is. Some of
+            these personality types have been studied in relation to health. For example, conscientious people tend to
+            be less likely to smoke, drink too much alcohol or be inactive. However, in other cases, the relationship is
+            less clear. Neurotic behaviour, for instance, has been found in some studies to increase the risk of death,
+            in others to protect people from illness and in others to have no link to health at all.
+          </p>
+          <p>
+
+            Even so, if health workers applied an understanding of personality to the services they provide, they could
+            influence the extent to which patients act on advice and follow their treatment. For example, high
+            sensation-seeking individuals, who are extroverts and unconscientious in the Big Five model and tend to take
+            part in risky activities, respond to drama, energy and emotion. Thus, to encourage those people to follow
+            health advice, health promotions can be designed to incorporate those factors. An example of this was the
+            campaign SENTAR which aimed to reduce cannabis use among high sensation-seeking teenagers. By creating a
+            suitable television advert, they successfully engaged these youths and reduced their recreational drug use.
+            Of course, this approach isn’t always possible. It is often impractical and expensive to create several
+            versions of a campaign to reach different personality types. However, recent developments in computer
+            technology, cookies and targeted advertising may allow this approach to be used more in future.
+          </p>
+          <p>
+
+            Personality could also be considered when sending messages, information and guidance to specific patients.
+            Already, health information is usually available in various forms – printed, digital, audio, and so on – to
+            be suitable and accessible for different users, such as the blind, the elderly, and people with reading
+            difficulties. Research has also shown that, by identifying different patients’ motivations for treatment and
+            then corresponding with them in a way that reflects their motivations, patients will become more involved in
+            their treatment, compared to when the same messages are sent to everyone. Correspondence could, therefore,
+            be adapted to reflect patients’ personality type, too. For example, less conscientious people could be sent
+            phone reminders to attend appointments. So far, there has been very little research into the effectiveness
+            of tailoring health guidance according to personality, so this area deserves further study.
+          </p>
+          <p>
+
+            Until now, the focus of personality-health research has been to explore the link between personality and
+            health and has had very little practical application. Thus, health workers have not engaged deeply with it.
+            However, by suggesting, trialling and implementing practices to engage patients with different
+            personalities, the relationship between psychology researchers and health workers could improve, along with
+            the health of the general public.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let questions = [
+        {
+          numb: 1,
+          question: "Who is the article most likely aimed at?",
+          answer: "health workers outside psychology",
+          options: [
+            "patients at a clinic",
+            "health workers outside psychology",
+            "psychologists"
+          ],
+        },
+
+        {
+          numb: 2,
+          question: "What is the main idea of the article? Research into the link between Health and Personality...",
+          answer: "can be practically applied to improve public health.",
+          options: [
+            "has not been studied in great depth until recently.",
+            "should be carried out by both clinicians and psychologists.",
+            "can be practically applied to improve public health."
+          ],
+        },
+
+        {
+          numb: 3,
+          question: "Which of these is NOT a reason why clinicians do not currently consider personality in their approach to healthcare?",
+          answer: "They lack sufficient training in psychology.",
+          options: [
+            "They lack sufficient training in psychology.",
+            "They think the effect on a patient’s health will be hardly noticeable.",
+            "They consider it their duty to treat all patients equally."
+          ],
+        },
+
+        {
+          numb: 4,
+          question: "What can be concluded from the text about neurotic patients?",
+          answer: "There is no consistent link between a patient’s level of neurosis and their health.",
+          options: [
+            "They are more likely than non-neurotic patients to report illness.",
+            "They are at greater risk from early death than non-neurotic patients.",
+            "There is no consistent link between a patient’s level of neurosis and their health."
+          ],
+        },
+
+        {
+          numb: 5,
+          question: "It can be inferred that the campaign SENTAR...",
+          answer: "used drama and energy in its design.",
+          options: [
+            "was delivered across multiple media, including television and online.",
+            "used drama and energy in its design.",
+            "was designed to attract conscientious, high sensation-seeking teenagers."
+          ],
+        },
+
+        {
+          numb: 6,
+          question: "The writer believes that improving computer technology...",
+          answer: "can help health workers deliver appropriate messages to different types of people.",
+          options: [
+            "can help health workers deliver appropriate messages to different types of people.",
+            "will ensure that more people are aware of public health campaigns.",
+            "will affect the number of high sensation-seeking people in the population."
+          ],
+        },
+
+        {
+          numb: 7,
+          question: "In paragraph 4, the writer refers to a study that found that...",
+          answer: "adapting letter-writing style can encourage patients with different goals to participate.",
+          options: [
+            "information in audio form helps blind people to access health information.",
+            "adapting correspondence to suit different personalities can have a positive impact on health.",
+            "adapting letter-writing style can encourage patients with different goals to participate."
+          ],
+        },
+
+        {
+          numb: 8,
+          question: "In the final paragraph, what does the writer advise researchers in health/personality to do?",
+          answer: "Give more practical suggestions to health workers.",
+          options: [
+            "Do more research before giving advice to health workers.",
+            "Give more practical suggestions to health workers.",
+            "Talk directly to the general public."
+          ],
+        },
+      ];
+    </script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/script_question_quizreading.js"></script>
+</body>
+
+</html>
